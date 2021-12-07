@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ObjectDetectorActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/gallery_button"
+        android:layout_width="@dimen/object_detector_button_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/object_detector_view_margin"
+        android:background="@color/purple_500"
+        android:drawableStart="@drawable/ic_gallery"
+        android:paddingStart="@dimen/object_detector_button_padding"
+        android:paddingEnd="@dimen/object_detector_button_padding"
+        android:text="@string/gallery_button_text"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/capture_button"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/capture_button"
+        android:layout_width="@dimen/object_detector_button_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/object_detector_view_margin"
+        android:background="@color/purple_500"
+        android:drawableStart="@drawable/ic_shutter"
+        android:paddingStart="@dimen/object_detector_button_padding"
+        android:paddingEnd="@dimen/object_detector_button_padding"
+        android:text="@string/take_photo_button_text"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/gallery_button"
+        app:layout_constraintTop_toTopOf="@+id/gallery_button" />
+
+    <ImageView
+        android:id="@+id/loaded_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

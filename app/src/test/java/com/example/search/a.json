@@ -1,0 +1,1 @@
+{  "requests": [{"image": {"content": "base64" },"features": [{ "type": "PRODUCT_SEARCH","maxResults": 5}], "imageContext": { "productSearchParams": {"productSet": "projects/tmsandbox-331711/locations/europe-west1/productSets/power-tools-drills","productCategories": ["homegoods-v2"]}}}]}

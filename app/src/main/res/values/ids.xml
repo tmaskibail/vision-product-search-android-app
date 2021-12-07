@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="search_res_layout" type="id" />
+    <item name="search_res_image" type="id" />
+    <item name="search_res_text" type="id" />
+    <item name="p_name" type="id" />
+    <item name="p_score" type="id" />
+    <item name="p_labels" type="id" />
+</resources>
